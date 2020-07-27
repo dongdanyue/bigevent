@@ -6,8 +6,11 @@ html,body {
     background: url('/assets/images/login_bg.jpg') no-repeat center;
     background-size: cover;
 }
-/* 登录注册框 */
-.loginAndRegBox {
+#login-logo {
+    padding-left: 80px;
+    padding-top: 20px;
+}
+#loginAndReg {
     width: 400px;
     height: 310px;
     background-color: #fff;
@@ -16,36 +19,28 @@ html,body {
     top: 50%;
     transform: translate(-50%,-50%);
 }
-/* 登录框头部 */
-.title-box {
+#login-title {
     height: 60px;
     background: url('/assets/images/login_title.png') no-repeat center;
 }
-/* 隐藏注册界面 */
-.reg-box {  
+#reg-box {
     display: none;
 }
-/* 美化登录表单 */
 .layui-form {
     padding: 0 30px;
 }
-/* 去注册/登录位置 */
-.links {
-    display: flex;
-    justify-content: flex-end;
+.layui-form a {
+    float: right;
+    padding-top: 15px;
 }
-.links a {
-    font-size: 12px;
-}
-/* 文本框前面的字体图标 子绝父相 */
 .layui-form-item {
     position: relative;
 }
-.layui-icon {
+.layui-form-item i {
     position: absolute;
     left: 10px;
     top: 10px;
 }
 .layui-input {
-    padding-left: 32px;
+    padding-left: 35px;
 }
